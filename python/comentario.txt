@@ -3,3 +3,5 @@
 [" ",".",",",";",":","\n","\r","_","-","/","?","!","{","}","[","]","(",")","'",'"',"<",">","+","#","$","%","&","=","°","|","¬","*","@","~","^","`","¨","´","¿","¡"]
 
 Debido a la codificación de los archivos de texto, las comparaciones con estos caracteres no se pudo realizar de manera adecuada, por lo que en los archivos de salida se pueden algunos de estos símbolos.
+
+El porcentaje de los caracteres válidos se realiza sobre el total de caracteres válidos en el texto

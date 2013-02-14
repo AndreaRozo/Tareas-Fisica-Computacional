@@ -55,6 +55,10 @@ if (len(sys.argv) ==2):
 			caracteresValidos[i] = caracteresValidos[posicion]
 			frecuencias[posicion] = temp1
 			caracteresValidos[posicion] = temp2
+	
+	total = sum(frecuencias)
+	for i in range (len(frecuencias)):
+		frecuencias[i] = float(frecuencias[i])/total*100
 
 	archivoEntrada.close()
 	
@@ -62,7 +66,7 @@ if (len(sys.argv) ==2):
 
 	archivoSalida = open('frecuencias_%s'%sys.argv[1]+'.txt','w')
 	for i in range (len(caracteresValidos)):
-		archivoSalida.write('%s       %d\n' % (caracteresValidos[i], frecuencias[i]))
+		archivoSalida.write('%s       %.6f  %s\n' % (caracteresValidos[i], frecuencias[i],chr(0x25)))
 
 	archivoSalida.close()
 else:
